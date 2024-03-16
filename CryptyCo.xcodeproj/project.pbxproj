@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		2EE9BC9F2BA5E56100F33EFB /* CryptyCoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BC9E2BA5E56100F33EFB /* CryptyCoApp.swift */; };
-		2EE9BCA12BA5E56100F33EFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCA02BA5E56100F33EFB /* ContentView.swift */; };
+		2EE9BCA12BA5E56100F33EFB /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCA02BA5E56100F33EFB /* SignInView.swift */; };
 		2EE9BCA32BA5E56400F33EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCA22BA5E56400F33EFB /* Assets.xcassets */; };
 		2EE9BCA62BA5E56400F33EFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCA52BA5E56400F33EFB /* Preview Assets.xcassets */; };
+		2EE9BCAD2BA5F4A800F33EFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCAC2BA5F4A700F33EFB /* GoogleService-Info.plist */; };
+		2EE9BCB02BA600A500F33EFB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2EE9BCAF2BA600A500F33EFB /* FirebaseAnalytics */; };
+		2EE9BCB22BA600A500F33EFB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2EE9BCB12BA600A500F33EFB /* FirebaseAuth */; };
+		2EE9BCB42BA6024C00F33EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCB32BA6024C00F33EFB /* AppDelegate.swift */; };
+		2EE9BCB62BA608BE00F33EFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCB52BA608BE00F33EFB /* SceneDelegate.swift */; };
+		2EE9BCBC2BA60E5B00F33EFB /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCBB2BA60E5B00F33EFB /* SignUpView.swift */; };
+		2EE9BCBE2BA60EF600F33EFB /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCBD2BA60EF600F33EFB /* AppFonts.swift */; };
+		2EE9BCC02BA60F1500F33EFB /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCBF2BA60F1500F33EFB /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2EE9BC9B2BA5E56100F33EFB /* CryptyCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptyCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE9BC9E2BA5E56100F33EFB /* CryptyCoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptyCoApp.swift; sourceTree = "<group>"; };
-		2EE9BCA02BA5E56100F33EFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2EE9BCA02BA5E56100F33EFB /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		2EE9BCA22BA5E56400F33EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EE9BCA52BA5E56400F33EFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2EE9BCAC2BA5F4A700F33EFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2EE9BCB32BA6024C00F33EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EE9BCB52BA608BE00F33EFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2EE9BCBB2BA60E5B00F33EFB /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		2EE9BCBD2BA60EF600F33EFB /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		2EE9BCBF2BA60F1500F33EFB /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE9BCB02BA600A500F33EFB /* FirebaseAnalytics in Frameworks */,
+				2EE9BCB22BA600A500F33EFB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +67,15 @@
 		2EE9BC9D2BA5E56100F33EFB /* CryptyCo */ = {
 			isa = PBXGroup;
 			children = (
-				2EE9BC9E2BA5E56100F33EFB /* CryptyCoApp.swift */,
-				2EE9BCA02BA5E56100F33EFB /* ContentView.swift */,
+				2EE9BCB32BA6024C00F33EFB /* AppDelegate.swift */,
+				2EE9BCB52BA608BE00F33EFB /* SceneDelegate.swift */,
+				2EE9BCA02BA5E56100F33EFB /* SignInView.swift */,
+				2EE9BCBB2BA60E5B00F33EFB /* SignUpView.swift */,
+				2EE9BCBD2BA60EF600F33EFB /* AppFonts.swift */,
+				2EE9BCBF2BA60F1500F33EFB /* AppColors.swift */,
 				2EE9BCA22BA5E56400F33EFB /* Assets.xcassets */,
+				2EE9BCAC2BA5F4A700F33EFB /* GoogleService-Info.plist */,
+				2EE9BC9E2BA5E56100F33EFB /* CryptyCoApp.swift */,
 				2EE9BCA42BA5E56400F33EFB /* Preview Content */,
 			);
 			path = CryptyCo;
@@ -83,6 +105,10 @@
 			dependencies = (
 			);
 			name = CryptyCo;
+			packageProductDependencies = (
+				2EE9BCAF2BA600A500F33EFB /* FirebaseAnalytics */,
+				2EE9BCB12BA600A500F33EFB /* FirebaseAuth */,
+			);
 			productName = CryptyCo;
 			productReference = 2EE9BC9B2BA5E56100F33EFB /* CryptyCo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 2EE9BC922BA5E56100F33EFB;
+			packageReferences = (
+				2EE9BCAE2BA600A500F33EFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 2EE9BC9C2BA5E56100F33EFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +156,7 @@
 			files = (
 				2EE9BCA62BA5E56400F33EFB /* Preview Assets.xcassets in Resources */,
 				2EE9BCA32BA5E56400F33EFB /* Assets.xcassets in Resources */,
+				2EE9BCAD2BA5F4A800F33EFB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EE9BCA12BA5E56100F33EFB /* ContentView.swift in Sources */,
+				2EE9BCBE2BA60EF600F33EFB /* AppFonts.swift in Sources */,
+				2EE9BCB42BA6024C00F33EFB /* AppDelegate.swift in Sources */,
+				2EE9BCBC2BA60E5B00F33EFB /* SignUpView.swift in Sources */,
+				2EE9BCA12BA5E56100F33EFB /* SignInView.swift in Sources */,
+				2EE9BCC02BA60F1500F33EFB /* AppColors.swift in Sources */,
 				2EE9BC9F2BA5E56100F33EFB /* CryptyCoApp.swift in Sources */,
+				2EE9BCB62BA608BE00F33EFB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +374,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2EE9BCAE2BA600A500F33EFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.22.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2EE9BCAF2BA600A500F33EFB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EE9BCAE2BA600A500F33EFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		2EE9BCB12BA600A500F33EFB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EE9BCAE2BA600A500F33EFB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2EE9BC932BA5E56100F33EFB /* Project object */;
 }
