@@ -15,10 +15,16 @@
 		2EE9BCB02BA600A500F33EFB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2EE9BCAF2BA600A500F33EFB /* FirebaseAnalytics */; };
 		2EE9BCB22BA600A500F33EFB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2EE9BCB12BA600A500F33EFB /* FirebaseAuth */; };
 		2EE9BCB42BA6024C00F33EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCB32BA6024C00F33EFB /* AppDelegate.swift */; };
-		2EE9BCB62BA608BE00F33EFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCB52BA608BE00F33EFB /* SceneDelegate.swift */; };
 		2EE9BCBC2BA60E5B00F33EFB /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCBB2BA60E5B00F33EFB /* SignUpView.swift */; };
 		2EE9BCBE2BA60EF600F33EFB /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCBD2BA60EF600F33EFB /* AppFonts.swift */; };
 		2EE9BCC02BA60F1500F33EFB /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCBF2BA60F1500F33EFB /* AppColors.swift */; };
+		2EE9BCC22BA6122000F33EFB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCC12BA6122000F33EFB /* HomeView.swift */; };
+		2EE9BCC42BA6130900F33EFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCC32BA6130900F33EFB /* ContentView.swift */; };
+		2EE9BCD02BA6AA3A00F33EFB /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCCB2BA6AA3900F33EFB /* Poppins-Regular.ttf */; };
+		2EE9BCD12BA6AA3A00F33EFB /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCCC2BA6AA3900F33EFB /* Poppins-Bold.ttf */; };
+		2EE9BCD22BA6AA3A00F33EFB /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCCD2BA6AA3900F33EFB /* Poppins-Light.ttf */; };
+		2EE9BCD32BA6AA3A00F33EFB /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCCE2BA6AA3A00F33EFB /* Poppins-Medium.ttf */; };
+		2EE9BCD42BA6AA3A00F33EFB /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCCF2BA6AA3A00F33EFB /* Poppins-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +35,17 @@
 		2EE9BCA52BA5E56400F33EFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2EE9BCAC2BA5F4A700F33EFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2EE9BCB32BA6024C00F33EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2EE9BCB52BA608BE00F33EFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2EE9BCBB2BA60E5B00F33EFB /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		2EE9BCBD2BA60EF600F33EFB /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		2EE9BCBF2BA60F1500F33EFB /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		2EE9BCC12BA6122000F33EFB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2EE9BCC32BA6130900F33EFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2EE9BCCB2BA6AA3900F33EFB /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		2EE9BCCC2BA6AA3900F33EFB /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		2EE9BCCD2BA6AA3900F33EFB /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		2EE9BCCE2BA6AA3A00F33EFB /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		2EE9BCCF2BA6AA3A00F33EFB /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		2EE9BCD52BA6AAA500F33EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,15 +80,15 @@
 		2EE9BC9D2BA5E56100F33EFB /* CryptyCo */ = {
 			isa = PBXGroup;
 			children = (
+				2EE9BCD52BA6AAA500F33EFB /* Info.plist */,
 				2EE9BCB32BA6024C00F33EFB /* AppDelegate.swift */,
-				2EE9BCB52BA608BE00F33EFB /* SceneDelegate.swift */,
-				2EE9BCA02BA5E56100F33EFB /* SignInView.swift */,
-				2EE9BCBB2BA60E5B00F33EFB /* SignUpView.swift */,
-				2EE9BCBD2BA60EF600F33EFB /* AppFonts.swift */,
-				2EE9BCBF2BA60F1500F33EFB /* AppColors.swift */,
+				2EE9BC9E2BA5E56100F33EFB /* CryptyCoApp.swift */,
+				2EE9BCC32BA6130900F33EFB /* ContentView.swift */,
+				2EE9BCC82BA6A9B800F33EFB /* Login */,
+				2EE9BCC92BA6A9CF00F33EFB /* Home */,
+				2EE9BCCA2BA6A9E500F33EFB /* Design */,
 				2EE9BCA22BA5E56400F33EFB /* Assets.xcassets */,
 				2EE9BCAC2BA5F4A700F33EFB /* GoogleService-Info.plist */,
-				2EE9BC9E2BA5E56100F33EFB /* CryptyCoApp.swift */,
 				2EE9BCA42BA5E56400F33EFB /* Preview Content */,
 			);
 			path = CryptyCo;
@@ -87,6 +100,37 @@
 				2EE9BCA52BA5E56400F33EFB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2EE9BCC82BA6A9B800F33EFB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2EE9BCA02BA5E56100F33EFB /* SignInView.swift */,
+				2EE9BCBB2BA60E5B00F33EFB /* SignUpView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2EE9BCC92BA6A9CF00F33EFB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2EE9BCC12BA6122000F33EFB /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2EE9BCCA2BA6A9E500F33EFB /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				2EE9BCBF2BA60F1500F33EFB /* AppColors.swift */,
+				2EE9BCBD2BA60EF600F33EFB /* AppFonts.swift */,
+				2EE9BCCC2BA6AA3900F33EFB /* Poppins-Bold.ttf */,
+				2EE9BCCD2BA6AA3900F33EFB /* Poppins-Light.ttf */,
+				2EE9BCCE2BA6AA3A00F33EFB /* Poppins-Medium.ttf */,
+				2EE9BCCB2BA6AA3900F33EFB /* Poppins-Regular.ttf */,
+				2EE9BCCF2BA6AA3A00F33EFB /* Poppins-SemiBold.ttf */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +199,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EE9BCA62BA5E56400F33EFB /* Preview Assets.xcassets in Resources */,
+				2EE9BCD32BA6AA3A00F33EFB /* Poppins-Medium.ttf in Resources */,
+				2EE9BCD22BA6AA3A00F33EFB /* Poppins-Light.ttf in Resources */,
 				2EE9BCA32BA5E56400F33EFB /* Assets.xcassets in Resources */,
+				2EE9BCD12BA6AA3A00F33EFB /* Poppins-Bold.ttf in Resources */,
+				2EE9BCD42BA6AA3A00F33EFB /* Poppins-SemiBold.ttf in Resources */,
 				2EE9BCAD2BA5F4A800F33EFB /* GoogleService-Info.plist in Resources */,
+				2EE9BCD02BA6AA3A00F33EFB /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,8 +221,9 @@
 				2EE9BCBC2BA60E5B00F33EFB /* SignUpView.swift in Sources */,
 				2EE9BCA12BA5E56100F33EFB /* SignInView.swift in Sources */,
 				2EE9BCC02BA60F1500F33EFB /* AppColors.swift in Sources */,
+				2EE9BCC42BA6130900F33EFB /* ContentView.swift in Sources */,
+				2EE9BCC22BA6122000F33EFB /* HomeView.swift in Sources */,
 				2EE9BC9F2BA5E56100F33EFB /* CryptyCoApp.swift in Sources */,
-				2EE9BCB62BA608BE00F33EFB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +355,7 @@
 				DEVELOPMENT_TEAM = 3VJYN6Z9BM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptyCo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -334,6 +385,7 @@
 				DEVELOPMENT_TEAM = 3VJYN6Z9BM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptyCo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

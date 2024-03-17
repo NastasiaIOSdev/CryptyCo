@@ -1,3 +1,4 @@
+
 import SwiftUI
 
 enum AppFonts {
@@ -10,6 +11,7 @@ enum AppFonts {
     case semibold14
     case semibold15
     case semibold32
+    case bold32
     
     var font: Font {
         switch self {
@@ -31,6 +33,8 @@ enum AppFonts {
             return .custom("Poppins-SemiBold", size: 15)
         case .semibold32:
             return .custom("Poppins-SemiBold", size: 32)
+        case .bold32:
+            return .custom("Poppins-Bold", size: 32)
         }
     }
 }
