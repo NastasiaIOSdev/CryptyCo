@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "1inCarusel.svg",
+      "filename" : "Arrow Up Arrow Down@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Arrow Up Arrow Down@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Arrow Up Arrow Down@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

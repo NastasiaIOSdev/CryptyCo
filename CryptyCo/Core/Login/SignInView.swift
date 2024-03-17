@@ -11,11 +11,14 @@ import FirebaseAuth
 
 struct SignInView : View {
     
+// MARK: - Property
+    
     @State var email = ""
     @State var pass = ""
     @State var message = ""
     @State var alert = false
     @State var show = false
+    @Binding var userEmail: String
     
     var body : some View{
         VStack {
@@ -38,6 +41,8 @@ struct SignInView : View {
                             .frame(height: 50)
                         TextField("E-mail", text: $email)
                             .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
+                            .textContentType(.username)
+                            .autocapitalization(.none)
                     }
                 }.padding(.bottom, 15)
                 
@@ -58,10 +63,11 @@ struct SignInView : View {
                         if !verified {
                             self.message = status
                             self.alert.toggle()
-                        }
-                        else{
+                        } else {
                             UserDefaults.standard.set(true, forKey: "status")
-                            NotificationCenter.default.post(name: NSNotification.Name("statusChange"), object: nil)
+                            UserDefaults.standard.set(self.email, forKey: "email")
+                            self.userEmail = self.email
+                            NotificationCenter.default.post(name: Notification.Name("statusChange"), object: nil)
                         }
                     }
                 }) {
@@ -90,7 +96,7 @@ struct SignInView : View {
                 .padding(.top, 25)
             }
             .sheet(isPresented: $show) {
-                SignUpView(show: self.$show)
+                SignUpView(show: self.$show, userEmail: self.$userEmail)
             }
         }
     }
@@ -111,6 +117,7 @@ extension SignInView {
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignInView(email: "example@email.com", pass: "password", message: "Incorrect credentials", alert: true, show: false, userEmail: .constant(""))
+                        .previewDisplayName("Alert Shown")
     }
 }

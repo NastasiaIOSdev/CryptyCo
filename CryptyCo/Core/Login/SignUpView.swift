@@ -10,12 +10,15 @@ import FirebaseCore
 import FirebaseAuth
 
 struct SignUpView : View {
+
+// MARK: - Property
     
     @State var email = ""
     @State var pass = ""
     @State var message = ""
     @State var alert = false
     @Binding var show : Bool
+    @Binding var userEmail: String
     
     var body : some View {
         VStack {
@@ -46,6 +49,8 @@ struct SignUpView : View {
                             .frame(height: 50)
                         TextField("Email", text: $email)
                             .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
+                            .textContentType(.username)
+                            .autocapitalization(.none)
                     }
                 }.padding(.bottom, 15)
                 
@@ -67,7 +72,10 @@ struct SignUpView : View {
                         } else {
                             UserDefaults.standard.set(true, forKey: "status")
                             self.show.toggle()
-                            NotificationCenter.default.post(name: NSNotification.Name("statusChange"), object: nil)
+                            UserDefaults.standard.set(self.email, forKey: "email")
+                            self.userEmail = self.email
+                            self.show.toggle()
+                            NotificationCenter.default.post(name: Notification.Name("statusChange"), object: nil)
                         }
                     }
                 }) {
@@ -104,7 +112,8 @@ extension SignUpView {
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView( show: .constant(true))
+        SignUpView(show: .constant(true), userEmail: .constant("example@email.com"))
+                        .previewDisplayName("Show SignUpView with email")
     }
 }
 
