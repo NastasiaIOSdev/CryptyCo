@@ -6,24 +6,25 @@
 //
 
 import SwiftUI
+import FirebaseCore
+import FirebaseAuth
 
-struct OnboardingCaruselView: View {
-    @AppStorage("currentPage") var currentPage = 1
-    
-    var totalPages = 3
+struct OnboardingCarouselView: View {
+    @Binding var showSignInView: Bool
+    @State private var currentPage = 1
     
     var body: some View {
         ZStack {
             if currentPage == 1 {
-                OnboardingScreenView(image: "1search", title: "Quick search!", detail: "Find information about the currency you are interested in.", bgColor: Color(.white))
+                OnboardingScreenView(image: "1search", title: "Quick search!", detail: "Find information about the currency you are interested in.", bgColor: Color(.white), showSignInView: $showSignInView)
                     .transition(.scale)
             }
             if currentPage == 2 {
-                OnboardingScreenView(image: "2graph", title: "See the charts!", detail: "Track the dynamics of changes in the price of the currency on the charts.", bgColor: Color(.white))
+                OnboardingScreenView(image: "2graph", title: "See the charts!", detail: "Track the dynamics of changes in the price of the currency on the charts.", bgColor: Color(.white), showSignInView: $showSignInView)
                     .transition(.scale)
             }
             if currentPage == 3 {
-                OnboardingScreenView(image: "3calculate", title: "Calculate the price!", detail: "Convert the value of any currency of interest.", bgColor: Color(.white))
+                OnboardingScreenView(image: "3calculate", title: "Calculate the price!", detail: "Convert the value of any currency of interest.", bgColor: Color(.white), showSignInView: $showSignInView)
                     .transition(.scale)
             }
             Spacer()
@@ -31,13 +32,15 @@ struct OnboardingCaruselView: View {
         .overlay(
             Button(action: {
                 withAnimation(.easeInOut) {
-                    if currentPage <= totalPages {
+                    if currentPage <= 3 {
                         currentPage += 1
-                    } else {
-                        currentPage = 1
+                    }
+                    if currentPage > 3 {
+                        let status = UserDefaults.standard.value(forKey: "status") as? Bool ?? false
+                        self.showSignInView = !status
                     }
                 }
-            }, label: {
+            }) {
                 Image(systemName: "chevron.right")
                     .font(.system(size: 20, weight: .semibold))
                     .foregroundColor(.black)
@@ -49,27 +52,21 @@ struct OnboardingCaruselView: View {
                             Circle()
                                 .stroke(Color.black.opacity(0.07), lineWidth: 4)
                             Circle()
-                                .trim(from: 0, to: CGFloat(currentPage) / CGFloat(totalPages))
+                                .trim(from: 0, to: CGFloat(currentPage) / 3)
                                 .stroke(AppColors.yellow, lineWidth: 4)
                                 .rotationEffect(.init(degrees: -90))
                         }
                         .padding(-15)
                     )
-            })
+            }
             .padding(.bottom, 30),
             alignment: .bottom
         )
-        .onChange(of: currentPage) { newValue in
-            if newValue > totalPages {
-                UserDefaults.standard.setValue(true, forKey: "status")
-                NotificationCenter.default.post(name: Notification.Name("statusChange"), object: nil)
-            }
-        }
     }
 }
 
-struct OnboardingCaruselView_Previews: PreviewProvider {
+struct OnboardingCarouselView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingCaruselView()
+        OnboardingCarouselView(showSignInView: .constant(false))
     }
 }

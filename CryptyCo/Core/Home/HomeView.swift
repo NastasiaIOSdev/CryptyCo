@@ -7,11 +7,8 @@ struct HomeView : View {
 
 // MARK: - Property
     var email: String
-    
     var body : some View {
-        
         VStack {
-            
             HeaderButtonView(email: email) {
                 UserDefaults.standard.set(false, forKey: Constants.UserDefaultStatusKey)
                 NotificationCenter.default.post(name: NSNotification.Name(Constants.NotificationNamestatusChange), object: nil)

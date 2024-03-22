@@ -1,11 +1,7 @@
-//
-//  OnboardingScreenView.swift
-//  CryptyCo
-//
-//  Created by Анастасия Ларина on 17.03.2024.
-//
 
 import SwiftUI
+import FirebaseCore
+import FirebaseAuth
 
 struct OnboardingScreenView: View {
     var image: String
@@ -13,6 +9,7 @@ struct OnboardingScreenView: View {
     var detail: String
     var bgColor: Color
     @AppStorage("currentPage") var currentPage = 1
+    @Binding var showSignInView: Bool
     
     var body: some View {
         VStack(spacing: 20) {
@@ -41,7 +38,9 @@ struct OnboardingScreenView: View {
                 
                 Button(action: {
                     withAnimation(.easeInOut) {
-                        currentPage = 4
+                            let status = UserDefaults.standard.value(forKey: "status") as? Bool ?? false
+                            self.showSignInView = !status
+                        
                     }
                 }, label: {
                     Text("Skip")
@@ -81,6 +80,6 @@ struct OnboardingScreenView: View {
 
 struct OnboardingScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingScreenView(image: "3calculate", title: "Some title", detail: "Bla  bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ", bgColor: Color.clear)
+        OnboardingScreenView(image: "3calculate", title: "Some title", detail: "Bla  bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ", bgColor: Color.clear, showSignInView: .constant(false))
     }
 }
