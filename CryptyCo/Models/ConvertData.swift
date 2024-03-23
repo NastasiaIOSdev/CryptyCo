@@ -1,8 +1,10 @@
-//
-//  File.swift
-//  CryptyCo
-//
-//  Created by Анастасия Ларина on 22.03.2024.
-//
 
 import Foundation
+
+struct CurrencyDTO: Codable {
+    let Valute: [String: Currency]
+}
+
+struct Currency: Codable {
+    let Value: Double
+}
