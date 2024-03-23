@@ -1,33 +1,36 @@
-
 import SwiftUI
 import FirebaseCore
 import FirebaseAuth
 
-struct HomeView : View {
-
-// MARK: - Property
-    var email: String
-    var body : some View {
+struct HomeView: View {
+    @EnvironmentObject var viewModel: HomeViewModel
+    @State private var showPortfolio: Bool = false
+    @State var userEmail = ""
+    
+    var body: some View {
         VStack {
-            HeaderButtonView(email: email) {
-                UserDefaults.standard.set(false, forKey: Constants.UserDefaultStatusKey)
-                NotificationCenter.default.post(name: NSNotification.Name(Constants.NotificationNamestatusChange), object: nil)
-                        }
-            BigTitleView()
+            HomeHeaderView(userEmail: $userEmail)
+            homeCoinsView
+                .transition(.move(edge: .leading))
+                .padding()
+            Spacer(minLength: 0)
         }
-        .foregroundColor(.white)
-    }
-}
-
-private extension HomeView {
-    enum Constants {
-        static let UserDefaultStatusKey = "status"
-        static let NotificationNamestatusChange = "statusChange"
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(email: "someMail")
+        
+            HomeView()
+       
+        .environmentObject(dev.homeVM)
+    }
+}
+
+extension HomeView {
+    private var homeCoinsView: some View {
+        ScrollView (.vertical, showsIndicators: false) {
+            CoinsListView(isPortfolio: showPortfolio)
+        }
     }
 }

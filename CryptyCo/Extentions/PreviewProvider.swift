@@ -12,7 +12,7 @@ class DeveloperPreview {
     static let instance = DeveloperPreview()
     private init() { }
     
-   // let homeVM = HomeViewModel()
+    let homeVM = HomeViewModel()
     
     let stat1 = DataStatistic(title: "Market Cap", value: "$12.5Bn", percentageChange: 25.34)
     let stat2 = DataStatistic(title: "Volume", value: "$1.23Tr")

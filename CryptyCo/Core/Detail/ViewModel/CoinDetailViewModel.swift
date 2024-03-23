@@ -1,6 +1,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 class CoinDetailViewModel: ObservableObject {
     

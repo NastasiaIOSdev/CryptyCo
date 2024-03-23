@@ -17,7 +17,6 @@
 		2E08290B2BADB0DB003C0B47 /* ConvertData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08290A2BADB0DB003C0B47 /* ConvertData.swift */; };
 		2E0829112BADB275003C0B47 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0829102BADB275003C0B47 /* HomeViewModel.swift */; };
 		2E0829132BADB2DE003C0B47 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0829122BADB2DE003C0B47 /* CoinRowView.swift */; };
-		2E0829162BADB338003C0B47 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2E0829152BADB338003C0B47 /* Kingfisher */; };
 		2E08291F2BADB5AB003C0B47 /* CoinDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08291E2BADB5AB003C0B47 /* CoinDetailViewModel.swift */; };
 		2E0829212BADB652003C0B47 /* CoinSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0829202BADB652003C0B47 /* CoinSearchBarView.swift */; };
 		2E0829242BADBE40003C0B47 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0829232BADBE40003C0B47 /* Double.swift */; };
@@ -32,9 +31,13 @@
 		2E0829382BADC678003C0B47 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0829372BADC678003C0B47 /* StatisticView.swift */; };
 		2E08293A2BADC729003C0B47 /* StatisticRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0829392BADC729003C0B47 /* StatisticRowView.swift */; };
 		2E08293C2BADCA45003C0B47 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E08293B2BADCA45003C0B47 /* Date.swift */; };
+		2E08293F2BAEC854003C0B47 /* CoinsData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E08293D2BAEC853003C0B47 /* CoinsData.xcdatamodeld */; };
+		2E0829412BAF2FE6003C0B47 /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0829402BAF2FE6003C0B47 /* ConverterView.swift */; };
+		2E0829432BAF3026003C0B47 /* ConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0829422BAF3026003C0B47 /* ConverterViewModel.swift */; };
+		2E0829462BAF570C003C0B47 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2E0829452BAF570C003C0B47 /* Kingfisher */; };
+		2E0829492BAF582F003C0B47 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2E0829482BAF582F003C0B47 /* FirebaseAnalytics */; };
+		2E08294B2BAF582F003C0B47 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2E08294A2BAF582F003C0B47 /* FirebaseAuth */; };
 		2E3ACA2B2BA71771009E5E9B /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3ACA2A2BA71771009E5E9B /* LoaderView.swift */; };
-		2E3ACA2E2BA71988009E5E9B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2E3ACA2D2BA71988009E5E9B /* FirebaseAnalytics */; };
-		2E3ACA302BA71988009E5E9B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2E3ACA2F2BA71988009E5E9B /* FirebaseAuth */; };
 		2EE9BC9F2BA5E56100F33EFB /* CryptyCoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BC9E2BA5E56100F33EFB /* CryptyCoApp.swift */; };
 		2EE9BCA12BA5E56100F33EFB /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCA02BA5E56100F33EFB /* SignInView.swift */; };
 		2EE9BCA32BA5E56400F33EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCA22BA5E56400F33EFB /* Assets.xcassets */; };
@@ -51,8 +54,7 @@
 		2EE9BCD22BA6AA3A00F33EFB /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCCD2BA6AA3900F33EFB /* Poppins-Light.ttf */; };
 		2EE9BCD32BA6AA3A00F33EFB /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCCE2BA6AA3A00F33EFB /* Poppins-Medium.ttf */; };
 		2EE9BCD42BA6AA3A00F33EFB /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCCF2BA6AA3A00F33EFB /* Poppins-SemiBold.ttf */; };
-		2EE9BCD72BA6DAB100F33EFB /* HeaderButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCD62BA6DAB000F33EFB /* HeaderButtonView.swift */; };
-		2EE9BCD92BA6DD1400F33EFB /* BigTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCD82BA6DD1400F33EFB /* BigTitleView.swift */; };
+		2EE9BCD72BA6DAB100F33EFB /* HeaderBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCD62BA6DAB000F33EFB /* HeaderBackView.swift */; };
 		2EE9BCE12BA6FAEF00F33EFB /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCE02BA6FAEE00F33EFB /* OnboardingScreenView.swift */; };
 		2EE9BCE32BA6FBF100F33EFB /* OnboardingCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE9BCE22BA6FBF100F33EFB /* OnboardingCarouselView.swift */; };
 		2EE9BCE82BA70DB900F33EFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EE9BCE72BA70DB900F33EFB /* LaunchScreen.storyboard */; };
@@ -83,6 +85,9 @@
 		2E0829372BADC678003C0B47 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		2E0829392BADC729003C0B47 /* StatisticRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticRowView.swift; sourceTree = "<group>"; };
 		2E08293B2BADCA45003C0B47 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		2E08293E2BAEC854003C0B47 /* CoinsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoinsData.xcdatamodel; sourceTree = "<group>"; };
+		2E0829402BAF2FE6003C0B47 /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
+		2E0829422BAF3026003C0B47 /* ConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewModel.swift; sourceTree = "<group>"; };
 		2E3ACA2A2BA71771009E5E9B /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		2EE9BC9B2BA5E56100F33EFB /* CryptyCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptyCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE9BC9E2BA5E56100F33EFB /* CryptyCoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptyCoApp.swift; sourceTree = "<group>"; };
@@ -102,8 +107,7 @@
 		2EE9BCCE2BA6AA3A00F33EFB /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		2EE9BCCF2BA6AA3A00F33EFB /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		2EE9BCD52BA6AAA500F33EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EE9BCD62BA6DAB000F33EFB /* HeaderButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderButtonView.swift; sourceTree = "<group>"; };
-		2EE9BCD82BA6DD1400F33EFB /* BigTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTitleView.swift; sourceTree = "<group>"; };
+		2EE9BCD62BA6DAB000F33EFB /* HeaderBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBackView.swift; sourceTree = "<group>"; };
 		2EE9BCE02BA6FAEE00F33EFB /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		2EE9BCE22BA6FBF100F33EFB /* OnboardingCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCarouselView.swift; sourceTree = "<group>"; };
 		2EE9BCE72BA70DB900F33EFB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -114,9 +118,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E0829162BADB338003C0B47 /* Kingfisher in Frameworks */,
-				2E3ACA2E2BA71988009E5E9B /* FirebaseAnalytics in Frameworks */,
-				2E3ACA302BA71988009E5E9B /* FirebaseAuth in Frameworks */,
+				2E0829492BAF582F003C0B47 /* FirebaseAnalytics in Frameworks */,
+				2E08294B2BAF582F003C0B47 /* FirebaseAuth in Frameworks */,
+				2E0829462BAF570C003C0B47 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,13 +158,6 @@
 				2EE9BCC32BA6130900F33EFB /* ContentView.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		2E08290C2BADB1A7003C0B47 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		2E08290F2BADB252003C0B47 /* ViewModel */ = {
@@ -210,6 +207,7 @@
 		2E08291B2BADB579003C0B47 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2E0829402BAF2FE6003C0B47 /* ConverterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +215,7 @@
 		2E08291C2BADB585003C0B47 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2E0829422BAF3026003C0B47 /* ConverterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -236,6 +235,7 @@
 				2E0829272BADBFAE003C0B47 /* Color.swift */,
 				2E0829352BADC5C4003C0B47 /* PreviewProvider.swift */,
 				2E0829252BADBE9F003C0B47 /* UIApplication.swift */,
+				2E08293D2BAEC853003C0B47 /* CoinsData.xcdatamodeld */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -243,8 +243,6 @@
 		2E0829302BADC252003C0B47 /* Cancel */ = {
 			isa = PBXGroup;
 			children = (
-				2EE9BCD82BA6DD1400F33EFB /* BigTitleView.swift */,
-				2EE9BCD62BA6DAB000F33EFB /* HeaderButtonView.swift */,
 			);
 			path = Cancel;
 			sourceTree = "<group>";
@@ -327,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				2E08292B2BADC12A003C0B47 /* HomeHeaderView.swift */,
+				2EE9BCD62BA6DAB000F33EFB /* HeaderBackView.swift */,
 				2E0829202BADB652003C0B47 /* CoinSearchBarView.swift */,
 				2E08292D2BADC160003C0B47 /* CoinsListView.swift */,
 				2E0829122BADB2DE003C0B47 /* CoinRowView.swift */,
@@ -366,7 +365,6 @@
 		2EE9BCE62BA6FED700F33EFB /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				2E08290C2BADB1A7003C0B47 /* Components */,
 				2EE9BCE42BA6FEA200F33EFB /* Loader */,
 				2EE9BCDF2BA6FAC200F33EFB /* Onboarding */,
 				2EE9BCC82BA6A9B800F33EFB /* Login */,
@@ -394,9 +392,9 @@
 			);
 			name = CryptyCo;
 			packageProductDependencies = (
-				2E3ACA2D2BA71988009E5E9B /* FirebaseAnalytics */,
-				2E3ACA2F2BA71988009E5E9B /* FirebaseAuth */,
-				2E0829152BADB338003C0B47 /* Kingfisher */,
+				2E0829452BAF570C003C0B47 /* Kingfisher */,
+				2E0829482BAF582F003C0B47 /* FirebaseAnalytics */,
+				2E08294A2BAF582F003C0B47 /* FirebaseAuth */,
 			);
 			productName = CryptyCo;
 			productReference = 2EE9BC9B2BA5E56100F33EFB /* CryptyCo.app */;
@@ -427,8 +425,8 @@
 			);
 			mainGroup = 2EE9BC922BA5E56100F33EFB;
 			packageReferences = (
-				2E3ACA2C2BA71988009E5E9B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				2E0829142BADB338003C0B47 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				2E0829442BAF570C003C0B47 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				2E0829472BAF582F003C0B47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 2EE9BC9C2BA5E56100F33EFB /* Products */;
 			projectDirPath = "";
@@ -473,6 +471,7 @@
 				2EE9BCB42BA6024C00F33EFB /* AppDelegate.swift in Sources */,
 				2E3ACA2B2BA71771009E5E9B /* LoaderView.swift in Sources */,
 				2E08292E2BADC160003C0B47 /* CoinsListView.swift in Sources */,
+				2E0829432BAF3026003C0B47 /* ConverterViewModel.swift in Sources */,
 				2E0829112BADB275003C0B47 /* HomeViewModel.swift in Sources */,
 				2E08293C2BADCA45003C0B47 /* Date.swift in Sources */,
 				2E0829362BADC5C4003C0B47 /* PreviewProvider.swift in Sources */,
@@ -480,10 +479,11 @@
 				2E0829282BADBFAE003C0B47 /* Color.swift in Sources */,
 				2E0829072BADB00B003C0B47 /* CurrencyManager.swift in Sources */,
 				2EE9BCE32BA6FBF100F33EFB /* OnboardingCarouselView.swift in Sources */,
+				2E0829412BAF2FE6003C0B47 /* ConverterView.swift in Sources */,
 				2EE9BCBC2BA60E5B00F33EFB /* SignUpView.swift in Sources */,
 				2E0829032BADABE0003C0B47 /* NetworkingManager.swift in Sources */,
 				2E08290B2BADB0DB003C0B47 /* ConvertData.swift in Sources */,
-				2EE9BCD72BA6DAB100F33EFB /* HeaderButtonView.swift in Sources */,
+				2EE9BCD72BA6DAB100F33EFB /* HeaderBackView.swift in Sources */,
 				2E08291F2BADB5AB003C0B47 /* CoinDetailViewModel.swift in Sources */,
 				2E0829262BADBE9F003C0B47 /* UIApplication.swift in Sources */,
 				2EE9BCA12BA5E56100F33EFB /* SignInView.swift in Sources */,
@@ -491,10 +491,10 @@
 				2E0828FF2BADA899003C0B47 /* CryptoData.swift in Sources */,
 				2E08293A2BADC729003C0B47 /* StatisticRowView.swift in Sources */,
 				2E0828FB2BADA84E003C0B47 /* CryptoItem.swift in Sources */,
-				2EE9BCD92BA6DD1400F33EFB /* BigTitleView.swift in Sources */,
 				2E0829092BADB068003C0B47 /* CoinDetailDataService.swift in Sources */,
 				2E08292C2BADC12A003C0B47 /* HomeHeaderView.swift in Sources */,
 				2EE9BCC42BA6130900F33EFB /* ContentView.swift in Sources */,
+				2E08293F2BAEC854003C0B47 /* CoinsData.xcdatamodeld in Sources */,
 				2E0829382BADC678003C0B47 /* StatisticView.swift in Sources */,
 				2EE9BCC22BA6122000F33EFB /* HomeView.swift in Sources */,
 				2E0829052BADADF5003C0B47 /* CryptoDataService.swift in Sources */,
@@ -706,7 +706,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2E0829142BADB338003C0B47 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		2E0829442BAF570C003C0B47 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -714,9 +714,9 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		2E3ACA2C2BA71988009E5E9B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		2E0829472BAF582F003C0B47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 10.22.0;
@@ -725,22 +725,35 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2E0829152BADB338003C0B47 /* Kingfisher */ = {
+		2E0829452BAF570C003C0B47 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2E0829142BADB338003C0B47 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 2E0829442BAF570C003C0B47 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		2E3ACA2D2BA71988009E5E9B /* FirebaseAnalytics */ = {
+		2E0829482BAF582F003C0B47 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2E3ACA2C2BA71988009E5E9B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 2E0829472BAF582F003C0B47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		2E3ACA2F2BA71988009E5E9B /* FirebaseAuth */ = {
+		2E08294A2BAF582F003C0B47 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2E3ACA2C2BA71988009E5E9B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 2E0829472BAF582F003C0B47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		2E08293D2BAEC853003C0B47 /* CoinsData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E08293E2BAEC854003C0B47 /* CoinsData.xcdatamodel */,
+			);
+			currentVersion = 2E08293E2BAEC854003C0B47 /* CoinsData.xcdatamodel */;
+			path = CoinsData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2EE9BC932BA5E56100F33EFB /* Project object */;
 }

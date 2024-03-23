@@ -2,8 +2,6 @@
 //  ContentView.swift
 //  CryptyCo
 //
-//  Created by Анастасия Ларина on 16.03.2024.
-//
 
 import SwiftUI
 import FirebaseCore
@@ -11,7 +9,7 @@ import FirebaseAuth
 
 struct SignInView : View {
     
-// MARK: - Property
+    // MARK: - Property
     
     @State var email = ""
     @State var pass = ""
@@ -28,16 +26,16 @@ struct SignInView : View {
                     .scaledToFit()
                     .frame(width: UIScreen.main.bounds.size.width * 0.6)
             }
-             Text("Sign In")
+            Text("Sign In")
                 .fontWeight(.heavy)
                 .padding([.top,.bottom], 20)
-                .font(AppFonts.bold32.font)
+                .font(Font.custom("SFProDisplay-Bold", size: 32))
             
             VStack{
                 VStack(alignment: .leading) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 45)
-                            .stroke(AppColors.background, lineWidth: 1)
+                            .stroke(Color.black.opacity(0.5), lineWidth: 1)
                             .frame(height: 50)
                         TextField("E-mail", text: $email)
                             .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
@@ -49,7 +47,7 @@ struct SignInView : View {
                 VStack(alignment: .leading){
                     ZStack {
                         RoundedRectangle(cornerRadius: 45)
-                            .stroke(AppColors.background, lineWidth: 1)
+                            .stroke(Color.black.opacity(0.5), lineWidth: 1)
                             .frame(height: 50)
                         SecureField("Password", text: $pass)
                             .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
@@ -75,13 +73,13 @@ struct SignInView : View {
                         .foregroundColor(.black)
                         .padding()
                 }
-                    .frame(maxWidth: .infinity)
-                    .background(AppColors.yellow)
-                    .clipShape(Capsule())
-                    .padding(.top, 30)
-                    .padding()
-                    .alert(isPresented: $alert) {
-                        Alert(title: Text("Error"), message: Text(self.message), dismissButton: .default(Text("Ok")))
+                .frame(maxWidth: .infinity)
+                .background(Color.yellow)
+                .clipShape(Capsule())
+                .padding(.top, 30)
+                .padding()
+                .alert(isPresented: $alert) {
+                    Alert(title: Text("Error"), message: Text(self.message), dismissButton: .default(Text("Ok")))
                 }
                 
                 HStack(spacing: 8){
@@ -91,7 +89,7 @@ struct SignInView : View {
                     }) {
                         Text("Sign Up")
                     }
-                    .foregroundColor(AppColors.yellow)
+                    .foregroundColor(Color.yellow)
                 }
                 .padding(.top, 25)
             }
@@ -118,6 +116,6 @@ extension SignInView {
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView(email: "example@email.com", pass: "password", message: "Incorrect credentials", alert: true, show: false, userEmail: .constant(""))
-                        .previewDisplayName("Alert Shown")
+            .previewDisplayName("Alert Shown")
     }
 }

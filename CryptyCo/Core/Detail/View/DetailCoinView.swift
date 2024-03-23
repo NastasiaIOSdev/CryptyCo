@@ -16,8 +16,10 @@ struct DetailLoadingView: View {
 
 struct DetailCoinView: View {
     @StateObject private var viewModel: CoinDetailViewModel
+    let coin: CryptoItem
     
     init(coin: CryptoItem) {
+        self.coin = coin
         _viewModel = StateObject(wrappedValue: CoinDetailViewModel(coin: coin))
     }
     
@@ -30,8 +32,8 @@ struct DetailCoinView: View {
                     Spacer()
                     headerDetailInfo
                     
-//                    CoinChartView(coin: viewModel.coin, height: 200, positiveColor: .black, negativeColor: .black)
-//                            .padding([.leading,.trailing, .top])
+                    CoinChartView(coin: viewModel.coin, height: 200, positiveColor: .black, negativeColor: .black)
+                            .padding([.leading,.trailing, .top])
                     
                     Spacer()
                     VStack(alignment: .leading, spacing: 5) {
@@ -49,6 +51,7 @@ struct DetailCoinView: View {
                 }
         }
         .navigationTitle(viewModel.coin.name)
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 
