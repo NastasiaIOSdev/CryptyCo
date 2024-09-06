@@ -1,6 +1,7 @@
 # CryptyCo
-SwiftUI, Combine
 
+- SwiftUI
+- Combine
 - MVVM
 - FireBace
 - KingFisher
