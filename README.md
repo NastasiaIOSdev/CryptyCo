@@ -5,5 +5,6 @@
 - MVVM
 - FireBace
 - KingFisher
+- LoadingView animation
 
 in develop
