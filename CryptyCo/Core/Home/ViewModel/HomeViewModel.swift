@@ -3,7 +3,7 @@ import Foundation
 import Combine
 import SwiftUI
 
-class HomeViewModel: ObservableObject {
+final class HomeViewModel: ObservableObject {
      
     @Published var statistics: [DataStatistic] = []
     @Published var coins = [CryptoItem]()

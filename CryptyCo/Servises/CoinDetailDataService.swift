@@ -2,7 +2,7 @@
 import Foundation
 import Combine
 
-class CoinDetailDataService {
+final class CoinDetailDataService {
     @Published var coinDetails: CryptoDetail?
     private var dataDetailSubscription: AnyCancellable?
     let coin: CryptoItem

@@ -2,7 +2,7 @@
 import Foundation
 import Combine
 
-class CryptoDataService {
+final class CryptoDataService {
     @Published var coins: [CryptoItem] = []
     @Published var topMovingCoins = [CryptoItem]()
     

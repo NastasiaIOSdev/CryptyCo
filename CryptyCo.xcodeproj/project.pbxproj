@@ -240,13 +240,6 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
-		2E0829302BADC252003C0B47 /* Cancel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cancel;
-			sourceTree = "<group>";
-		};
 		2EE9BC922BA5E56100F33EFB = {
 			isa = PBXGroup;
 			children = (
@@ -330,7 +323,6 @@
 				2E08292D2BADC160003C0B47 /* CoinsListView.swift */,
 				2E0829122BADB2DE003C0B47 /* CoinRowView.swift */,
 				2E0829292BADC0B2003C0B47 /* CoinChartView.swift */,
-				2E0829302BADC252003C0B47 /* Cancel */,
 			);
 			path = Components;
 			sourceTree = "<group>";

@@ -2,7 +2,7 @@
 import Foundation
 import Combine
 
-class ConverterViewModel: ObservableObject {
+final class ConverterViewModel: ObservableObject {
 
      @Published var selectedCoin: CryptoItem?
      @Published var usdToRubRate: Double = 0.0
